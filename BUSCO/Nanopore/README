@@ -1,0 +1,4 @@
+# Nanopore BUSCO README
+
+This folder contains summary, results as well as scripts used for running BUSCO on the Oxford Nanopore
+Platynereis dumerilii genome sequence assembly.
