@@ -1,0 +1,5 @@
+# assembly-stats README file
+
+## The assembly-stats package was used to calculate basic genome assembly statistics for the different assemblies
+
+## The conda-env: 'platy_genome'
