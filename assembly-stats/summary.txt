@@ -1,0 +1,49 @@
+# Statistics from the CANU and FALCON genome assemblies
+
+# Install the Sanger 'assembly-stats' package
+## conda install -c bioconda assembly-stats
+
+# FALCON assembly of the PacBio sequencing data
+assembly-stats ~/Data/Pdum_GENOME_TRANSCRIPTOME/Assembly/platy.falcon.fa
+#sum = 2054566777, n = 20337, ave = 101026.05, largest = 4102287
+#N50 = 160077, n = 3036
+#N60 = 125992, n = 4485
+#N70 = 96859, n = 6347
+#N80 = 71208, n = 8809
+#N90 = 43831, n = 12454
+#N100 = 3322, n = 20337
+#N_count = 0
+#Gaps = 0
+
+# CANU assembly of the PacBio sequencing data
+assembly-stats ~/Data/Pdum_GENOME_TRANSCRIPTOME/CANU_Assembly/canu_pacbio.contigs.fasta
+#stats for canu_pacbio.contigs.fasta
+#sum = 1954807323, n = 41851, ave = 46708.74, largest = 2406554
+#N50 = 65062, n = 6987
+#N60 = 50506, n = 10413
+#N70 = 39275, n = 14800
+#N80 = 29107, n = 20578
+#N90 = 19699, n = 28674
+#N100 = 1111, n = 41851
+#N_count = 0
+#Gaps = 0
+
+# CANU assembly of the Oxford Nanopore sequencing data
+assembly-stats ~/Data/Pdum_GENOME_TRANSCRIPTOME/CANU_Assembly/canu_nanopore.contigs.fasta
+#stats for canu_nanopore.contigs.fasta
+#sum = 707089037, n = 10376, ave = 68146.59, largest = 1166483
+#N50 = 92996, n = 2134
+#N60 = 75399, n = 2983
+#N70 = 61396, n = 4022
+#N80 = 49236, n = 5310
+#N90 = 36381, n = 6972
+#N100 = 1002, n = 10376
+#N_count = 0
+#Gaps = 0
+
+# BBMap stats.sh can also be used to calculate GC percentage
+#stats.sh "~/path/to/genome_assembly/fasta"
+
+#CANU PacBio = 37.74%
+#CANU Nanopore = 37.21%
+#FALCON PacBio = 37.73%
