@@ -1,2 +1,4 @@
-# PacBio BUSCO results, summary and scripts
+# PacBio BUSCO README
 
+This folder contains summary, results as well as scripts used for running BUSCO on the PacBio Long-Read
+Platynereis dumerilii genome sequence assembly.
