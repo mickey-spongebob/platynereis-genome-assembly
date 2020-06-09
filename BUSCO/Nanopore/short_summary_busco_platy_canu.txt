@@ -1,0 +1,15 @@
+# BUSCO version is: 3.0.1 
+# The lineage dataset is: metazoa_odb9 (Creation date: 2016-02-13, number of species: 65, number of BUSCOs: 978)
+# To reproduce this run: python /scratch/mutemi/BUSCO_Platy_seq/scripts/run_BUSCO.py -i /scratch/mutemi/BUSCO_Platy_seq/platygenome_Seq_Data/platy_canu1.contigs.fasta -o busco_platy_canu1_1_%j -l /scratch/mutemi/BUSCO_Platy_seq/BUSCO_Lineages/metazoa_odb9/ -m genome -c 1 --long -sp fly
+#
+# Summarized benchmarking in BUSCO notation for file /scratch/mutemi/BUSCO_Platy_seq/platygenome_Seq_Data/platy_canu1.contigs.fasta
+# BUSCO was run in mode: genome
+
+	C:4.6%[S:4.6%,D:0.0%],F:4.8%,M:90.6%,n:978
+
+	45	Complete BUSCOs (C)
+	45	Complete and single-copy BUSCOs (S)
+	0	Complete and duplicated BUSCOs (D)
+	47	Fragmented BUSCOs (F)
+	886	Missing BUSCOs (M)
+	978	Total BUSCO groups searched
