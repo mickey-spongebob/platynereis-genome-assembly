@@ -1,0 +1,26 @@
+# BUSCO README file
+
+## Describes the BUSCO quality checks for the current genome assemblies.
+## Versions. BUSCO v3.0.1, OrthoDB v9
+
+## Background
+BUSCO: Benchmarking Universal Single Copy Orthologs, is an algorithm developed and maintained by the Zdobnov
+lab, that provides a quantitative measure of how many single copy orthologs are contained in the assembly. 
+Depending on the dataset, it can provide a proxy as to how complete the current assembly is. 
+
+## Data
+We compared two distinct genome assembly methods as well as two different long-read sequencing strategies.
+
+### Sequencing data
+  1. Oxford Nanopore sequencing: performed in EMBL, Heidelberg-GERMANY
+  2. PacBio sequencing: performed in University of Florida, Whitney Laboratory
+  
+### Assembly methods
+  1. CANU
+  2. FALCON
+
+The data files below were used as input to the BUSCO algorithm.
+
+#### platy.falcon.fa
+#### canu_nanopore.contigs.fasta
+#### canu_pacbio.contigs.fasta
