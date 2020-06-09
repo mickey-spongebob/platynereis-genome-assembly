@@ -1,7 +1,10 @@
 # RNA-seq read mapping README
 
 A collection of paired-end Illumina based RNA-seq reads was mapped to the draft assembly to evaluate how
-well Platynereis dumerilii RNA is represented by the genome.
+well Platynereis dumerilii RNA is represented by the genome. 
+
+The genome assemblies used for mapping include only the PacBio data; the Nanopore data on account of the
+very low BUSCO scores were not used for further analyses.
 
 ## Software used includes:
 STAR
