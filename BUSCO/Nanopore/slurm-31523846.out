@@ -1,0 +1,115 @@
+INFO	****************** Start a BUSCO 3.0.1 analysis, current time: 04/01/2019 12:12:04 ******************
+INFO	Configuration loaded from /scratch/mutemi/BUSCO_Platy_seq/config/config.ini.platy
+INFO	Init tools...
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	To reproduce this run: python /scratch/mutemi/BUSCO_Platy_seq/scripts/run_BUSCO.py -i /scratch/mutemi/BUSCO_Platy_seq/platygenome_Seq_Data/platy_canu1.contigs.fasta -o busco_platy_canu1_1_%j -l /scratch/mutemi/BUSCO_Platy_seq/BUSCO_Lineages/metazoa_odb9/ -m genome -c 1 --long -sp fly
+INFO	Mode is: genome
+INFO	The lineage dataset is: metazoa_odb9 (eukaryota)
+INFO	Temp directory is ./tmp/
+INFO	****** Phase 1 of 2, initial predictions ******
+INFO	****** Step 1/3, current time: 04/01/2019 12:12:12 ******
+INFO	Create blast database...
+INFO	[makeblastdb]	Building a new DB, current time: 04/01/2019 12:12:12
+INFO	[makeblastdb]	New DB name:   /scratch/mutemi/BUSCO_Platy_seq/scripts/tmp/busco_platy_canu1_1_%j_2634825351
+INFO	[makeblastdb]	New DB title:  /scratch/mutemi/BUSCO_Platy_seq/platygenome_Seq_Data/platy_canu1.contigs.fasta
+INFO	[makeblastdb]	Sequence type: Nucleotide
+INFO	[makeblastdb]	Keep MBits: T
+INFO	[makeblastdb]	Maximum file size: 1000000000B
+INFO	[makeblastdb]	Adding sequences from FASTA; added 10376 sequences in 8.15829 seconds.
+INFO	[makeblastdb]	1 of 1 task(s) completed at 04/01/2019 12:12:20
+INFO	Running tblastn, writing output to /scratch/mutemi/BUSCO_Platy_seq/scripts/run_busco_platy_canu1_1_%j/blast_output/tblastn_busco_platy_canu1_1_%j.tsv...
+INFO	[tblastn]	1 of 1 task(s) completed at 04/01/2019 12:41:02
+INFO	****** Step 2/3, current time: 04/01/2019 12:41:02 ******
+INFO	Maximum number of candidate contig per BUSCO limited to: 3
+INFO	Getting coordinates for candidate regions...
+INFO	Pre-Augustus scaffold extraction...
+INFO	Running Augustus prediction using fly as species:
+INFO	[augustus]	Please find all logs related to Augustus errors here: /scratch/mutemi/BUSCO_Platy_seq/scripts/run_busco_platy_canu1_1_%j/augustus_output/augustus.log
+INFO	[augustus]	41 of 407 task(s) completed at 04/01/2019 12:46:44
+INFO	[augustus]	82 of 407 task(s) completed at 04/01/2019 12:52:13
+INFO	[augustus]	123 of 407 task(s) completed at 04/01/2019 12:58:06
+INFO	[augustus]	163 of 407 task(s) completed at 04/01/2019 13:03:39
+INFO	[augustus]	204 of 407 task(s) completed at 04/01/2019 13:08:53
+INFO	[augustus]	245 of 407 task(s) completed at 04/01/2019 13:14:16
+INFO	[augustus]	285 of 407 task(s) completed at 04/01/2019 13:19:26
+INFO	[augustus]	326 of 407 task(s) completed at 04/01/2019 13:24:45
+INFO	[augustus]	367 of 407 task(s) completed at 04/01/2019 13:30:32
+INFO	[augustus]	407 of 407 task(s) completed at 04/01/2019 13:35:47
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 04/01/2019 13:36:01 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	[hmmsearch]	31 of 310 task(s) completed at 04/01/2019 13:36:05
+INFO	[hmmsearch]	62 of 310 task(s) completed at 04/01/2019 13:36:06
+INFO	[hmmsearch]	93 of 310 task(s) completed at 04/01/2019 13:36:08
+INFO	[hmmsearch]	124 of 310 task(s) completed at 04/01/2019 13:36:09
+INFO	[hmmsearch]	155 of 310 task(s) completed at 04/01/2019 13:36:10
+INFO	[hmmsearch]	186 of 310 task(s) completed at 04/01/2019 13:36:12
+INFO	[hmmsearch]	217 of 310 task(s) completed at 04/01/2019 13:36:13
+INFO	[hmmsearch]	248 of 310 task(s) completed at 04/01/2019 13:36:14
+INFO	[hmmsearch]	279 of 310 task(s) completed at 04/01/2019 13:36:15
+INFO	[hmmsearch]	310 of 310 task(s) completed at 04/01/2019 13:36:16
+INFO	Results:
+INFO	C:2.9%[S:2.9%,D:0.0%],F:5.8%,M:91.3%,n:978
+INFO	28 Complete BUSCOs (C)
+INFO	28 Complete and single-copy BUSCOs (S)
+INFO	0 Complete and duplicated BUSCOs (D)
+INFO	57 Fragmented BUSCOs (F)
+INFO	893 Missing BUSCOs (M)
+INFO	978 Total BUSCO groups searched
+INFO	****** Phase 2 of 2, predictions using species specific training ******
+INFO	****** Step 1/3, current time: 04/01/2019 13:36:18 ******
+INFO	Extracting missing and fragmented buscos from the ancestral_variants file...
+INFO	Running tblastn, writing output to /scratch/mutemi/BUSCO_Platy_seq/scripts/run_busco_platy_canu1_1_%j/blast_output/tblastn_busco_platy_canu1_1_%j_missing_and_frag_rerun.tsv...
+INFO	[tblastn]	1 of 1 task(s) completed at 04/01/2019 18:00:12
+INFO	Maximum number of candidate contig per BUSCO limited to: 3
+INFO	Getting coordinates for candidate regions...
+INFO	****** Step 2/3, current time: 04/01/2019 18:00:12 ******
+INFO	Training Augustus using Single-Copy Complete BUSCOs:
+INFO	Converting predicted genes to short genbank files at 04/01/2019 18:00:12...
+INFO	All files converted to short genbank files, now running the training scripts at 04/01/2019 18:02:34...
+WARNING	Optimizing augustus metaparameters, this may take a very long time, started at 04/01/2019 18:02:35
+INFO	Pre-Augustus scaffold extraction...
+INFO	Re-running Augustus with the new metaparameters, number of target BUSCOs: 950
+INFO	[augustus]	44 of 432 task(s) completed at 04/01/2019 20:24:56
+INFO	[augustus]	87 of 432 task(s) completed at 04/01/2019 20:29:48
+INFO	[augustus]	130 of 432 task(s) completed at 04/01/2019 20:36:16
+INFO	[augustus]	173 of 432 task(s) completed at 04/01/2019 20:41:11
+INFO	[augustus]	217 of 432 task(s) completed at 04/01/2019 20:46:28
+INFO	[augustus]	260 of 432 task(s) completed at 04/01/2019 20:52:14
+INFO	[augustus]	303 of 432 task(s) completed at 04/01/2019 20:56:42
+INFO	[augustus]	346 of 432 task(s) completed at 04/01/2019 21:01:12
+INFO	[augustus]	389 of 432 task(s) completed at 04/01/2019 21:06:50
+INFO	[augustus]	432 of 432 task(s) completed at 04/01/2019 21:15:02
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 04/01/2019 21:15:15 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	[hmmsearch]	37 of 362 task(s) completed at 04/01/2019 21:15:17
+INFO	[hmmsearch]	Error: Failed to open sequence file /scratch/mutemi/BUSCO_Platy_seq/scripts/run_busco_platy_canu1_1_%j/augustus_output/extracted_proteins/EOG091G06MR.faa.2 for reading
+INFO	[hmmsearch]	Error: Failed to open sequence file /scratch/mutemi/BUSCO_Platy_seq/scripts/run_busco_platy_canu1_1_%j/augustus_output/extracted_proteins/EOG091G0FPM.faa.1 for reading
+INFO	[hmmsearch]	73 of 362 task(s) completed at 04/01/2019 21:15:18
+INFO	[hmmsearch]	109 of 362 task(s) completed at 04/01/2019 21:15:20
+INFO	[hmmsearch]	145 of 362 task(s) completed at 04/01/2019 21:15:21
+INFO	[hmmsearch]	Error: Failed to open sequence file /scratch/mutemi/BUSCO_Platy_seq/scripts/run_busco_platy_canu1_1_%j/augustus_output/extracted_proteins/EOG091G0J69.faa.1 for reading
+INFO	[hmmsearch]	Error: Failed to open sequence file /scratch/mutemi/BUSCO_Platy_seq/scripts/run_busco_platy_canu1_1_%j/augustus_output/extracted_proteins/EOG091G06I3.faa.1 for reading
+INFO	[hmmsearch]	182 of 362 task(s) completed at 04/01/2019 21:15:23
+INFO	[hmmsearch]	Error: Failed to open sequence file /scratch/mutemi/BUSCO_Platy_seq/scripts/run_busco_platy_canu1_1_%j/augustus_output/extracted_proteins/EOG091G0E11.faa.1 for reading
+INFO	[hmmsearch]	218 of 362 task(s) completed at 04/01/2019 21:15:24
+INFO	[hmmsearch]	Error: Failed to open sequence file /scratch/mutemi/BUSCO_Platy_seq/scripts/run_busco_platy_canu1_1_%j/augustus_output/extracted_proteins/EOG091G0XXE.faa.2 for reading
+INFO	[hmmsearch]	Error: Failed to open sequence file /scratch/mutemi/BUSCO_Platy_seq/scripts/run_busco_platy_canu1_1_%j/augustus_output/extracted_proteins/EOG091G05IK.faa.2 for reading
+INFO	[hmmsearch]	254 of 362 task(s) completed at 04/01/2019 21:15:26
+INFO	[hmmsearch]	290 of 362 task(s) completed at 04/01/2019 21:15:27
+INFO	[hmmsearch]	Error: Failed to open sequence file /scratch/mutemi/BUSCO_Platy_seq/scripts/run_busco_platy_canu1_1_%j/augustus_output/extracted_proteins/EOG091G0S5L.faa.2 for reading
+INFO	[hmmsearch]	326 of 362 task(s) completed at 04/01/2019 21:15:28
+INFO	[hmmsearch]	362 of 362 task(s) completed at 04/01/2019 21:15:30
+INFO	Results:
+INFO	C:4.6%[S:4.6%,D:0.0%],F:4.8%,M:90.6%,n:978
+INFO	45 Complete BUSCOs (C)
+INFO	45 Complete and single-copy BUSCOs (S)
+INFO	0 Complete and duplicated BUSCOs (D)
+INFO	47 Fragmented BUSCOs (F)
+INFO	886 Missing BUSCOs (M)
+INFO	978 Total BUSCO groups searched
+INFO	BUSCO analysis done with WARNING(s). Total running time: 32612.783792 seconds
+INFO	Results written in /scratch/mutemi/BUSCO_Platy_seq/scripts/run_busco_platy_canu1_1_%j/
+
