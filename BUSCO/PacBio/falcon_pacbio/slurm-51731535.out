@@ -1,0 +1,108 @@
+INFO	****************** Start a BUSCO 3.0.1 analysis, current time: 12/17/2019 14:15:16 ******************
+INFO	Configuration loaded from /g/arendt/kevin/Genome_Analysis/BUSCO/BUSCO_tXome/config/config.ini.platy
+INFO	Init tools...
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	To reproduce this run: python run_BUSCO.py -i platy.falcon.fa -o busco_platy_falcon_pacbio -l /g/arendt/kevin/Genome_Analysis/BUSCO/BUSCO_lineages/metazoa_odb9/ -m genome -c 1 --long -sp fly
+INFO	Mode is: genome
+INFO	The lineage dataset is: metazoa_odb9 (eukaryota)
+INFO	Temp directory is ./tmp/
+INFO	****** Phase 1 of 2, initial predictions ******
+INFO	****** Step 1/3, current time: 12/17/2019 14:15:39 ******
+INFO	Create blast database...
+INFO	[makeblastdb]	Building a new DB, current time: 12/17/2019 14:15:39
+INFO	[makeblastdb]	New DB name:   /g/arendt/kevin/Genome_Analysis/BUSCO/BUSCO_results/BUSCO_PacBio_Platy/FALCON_assembly/tmp/busco_platy_falcon_pacbio_400625858
+INFO	[makeblastdb]	New DB title:  platy.falcon.fa
+INFO	[makeblastdb]	Sequence type: Nucleotide
+INFO	[makeblastdb]	Keep MBits: T
+INFO	[makeblastdb]	Maximum file size: 1000000000B
+INFO	[makeblastdb]	Adding sequences from FASTA; added 20337 sequences in 26.5532 seconds.
+INFO	[makeblastdb]	1 of 1 task(s) completed at 12/17/2019 14:16:07
+INFO	Running tblastn, writing output to /g/arendt/kevin/Genome_Analysis/BUSCO/BUSCO_results/BUSCO_PacBio_Platy/FALCON_assembly/run_busco_platy_falcon_pacbio/blast_output/tblastn_busco_platy_falcon_pacbio.tsv...
+INFO	[tblastn]	1 of 1 task(s) completed at 12/17/2019 15:43:14
+INFO	****** Step 2/3, current time: 12/17/2019 15:43:14 ******
+INFO	Maximum number of candidate contig per BUSCO limited to: 3
+INFO	Getting coordinates for candidate regions...
+INFO	Pre-Augustus scaffold extraction...
+INFO	Running Augustus prediction using fly as species:
+INFO	[augustus]	Please find all logs related to Augustus errors here: /g/arendt/kevin/Genome_Analysis/BUSCO/BUSCO_results/BUSCO_PacBio_Platy/FALCON_assembly/run_busco_platy_falcon_pacbio/augustus_output/augustus.log
+INFO	[augustus]	122 of 1219 task(s) completed at 12/17/2019 16:15:16
+INFO	[augustus]	244 of 1219 task(s) completed at 12/17/2019 16:49:33
+INFO	[augustus]	366 of 1219 task(s) completed at 12/17/2019 17:26:51
+INFO	[augustus]	488 of 1219 task(s) completed at 12/17/2019 17:47:45
+INFO	[augustus]	610 of 1219 task(s) completed at 12/17/2019 18:09:11
+INFO	[augustus]	732 of 1219 task(s) completed at 12/17/2019 18:29:56
+INFO	[augustus]	854 of 1219 task(s) completed at 12/17/2019 18:55:33
+INFO	[augustus]	976 of 1219 task(s) completed at 12/17/2019 19:18:58
+INFO	[augustus]	1098 of 1219 task(s) completed at 12/17/2019 19:43:56
+INFO	[augustus]	1219 of 1219 task(s) completed at 12/17/2019 20:06:34
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 12/17/2019 20:07:32 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	[hmmsearch]	117 of 1167 task(s) completed at 12/17/2019 20:07:42
+INFO	[hmmsearch]	234 of 1167 task(s) completed at 12/17/2019 20:07:48
+INFO	[hmmsearch]	351 of 1167 task(s) completed at 12/17/2019 20:07:56
+INFO	[hmmsearch]	467 of 1167 task(s) completed at 12/17/2019 20:08:03
+INFO	[hmmsearch]	584 of 1167 task(s) completed at 12/17/2019 20:08:09
+INFO	[hmmsearch]	701 of 1167 task(s) completed at 12/17/2019 20:08:15
+INFO	[hmmsearch]	817 of 1167 task(s) completed at 12/17/2019 20:08:21
+INFO	[hmmsearch]	934 of 1167 task(s) completed at 12/17/2019 20:08:28
+INFO	[hmmsearch]	1051 of 1167 task(s) completed at 12/17/2019 20:08:33
+INFO	[hmmsearch]	1167 of 1167 task(s) completed at 12/17/2019 20:08:38
+INFO	Results:
+INFO	C:62.3%[S:57.3%,D:5.0%],F:11.7%,M:26.0%,n:978
+INFO	609 Complete BUSCOs (C)
+INFO	560 Complete and single-copy BUSCOs (S)
+INFO	49 Complete and duplicated BUSCOs (D)
+INFO	114 Fragmented BUSCOs (F)
+INFO	255 Missing BUSCOs (M)
+INFO	978 Total BUSCO groups searched
+INFO	****** Phase 2 of 2, predictions using species specific training ******
+INFO	****** Step 1/3, current time: 12/17/2019 20:08:39 ******
+INFO	Extracting missing and fragmented buscos from the ancestral_variants file...
+INFO	Running tblastn, writing output to /g/arendt/kevin/Genome_Analysis/BUSCO/BUSCO_results/BUSCO_PacBio_Platy/FALCON_assembly/run_busco_platy_falcon_pacbio/blast_output/tblastn_busco_platy_falcon_pacbio_missing_and_frag_rerun.tsv...
+INFO	[tblastn]	1 of 1 task(s) completed at 12/18/2019 00:51:28
+INFO	Maximum number of candidate contig per BUSCO limited to: 3
+INFO	Getting coordinates for candidate regions...
+INFO	****** Step 2/3, current time: 12/18/2019 00:51:28 ******
+INFO	Training Augustus using Single-Copy Complete BUSCOs:
+INFO	Converting predicted genes to short genbank files at 12/18/2019 00:51:28...
+INFO	All files converted to short genbank files, now running the training scripts at 12/18/2019 01:42:16...
+WARNING	Optimizing augustus metaparameters, this may take a very long time, started at 12/18/2019 01:42:19
+INFO	Pre-Augustus scaffold extraction...
+INFO	Re-running Augustus with the new metaparameters, number of target BUSCOs: 369
+INFO	[augustus]	41 of 409 task(s) completed at 12/21/2019 08:02:34
+INFO	[augustus]	82 of 409 task(s) completed at 12/21/2019 08:09:47
+INFO	[augustus]	123 of 409 task(s) completed at 12/21/2019 08:15:35
+INFO	[augustus]	164 of 409 task(s) completed at 12/21/2019 08:21:07
+INFO	[augustus]	205 of 409 task(s) completed at 12/21/2019 08:27:02
+INFO	[augustus]	246 of 409 task(s) completed at 12/21/2019 08:33:08
+INFO	[augustus]	287 of 409 task(s) completed at 12/21/2019 08:44:04
+INFO	[augustus]	328 of 409 task(s) completed at 12/21/2019 08:51:08
+INFO	[augustus]	369 of 409 task(s) completed at 12/21/2019 08:59:03
+INFO	[augustus]	409 of 409 task(s) completed at 12/21/2019 09:07:31
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 12/21/2019 09:07:47 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	[hmmsearch]	41 of 407 task(s) completed at 12/21/2019 09:07:48
+INFO	[hmmsearch]	82 of 407 task(s) completed at 12/21/2019 09:07:50
+INFO	[hmmsearch]	123 of 407 task(s) completed at 12/21/2019 09:07:51
+INFO	[hmmsearch]	163 of 407 task(s) completed at 12/21/2019 09:07:52
+INFO	[hmmsearch]	204 of 407 task(s) completed at 12/21/2019 09:07:54
+INFO	[hmmsearch]	245 of 407 task(s) completed at 12/21/2019 09:07:55
+INFO	[hmmsearch]	285 of 407 task(s) completed at 12/21/2019 09:07:57
+INFO	[hmmsearch]	Error: Failed to open sequence file /g/arendt/kevin/Genome_Analysis/BUSCO/BUSCO_results/BUSCO_PacBio_Platy/FALCON_assembly/run_busco_platy_falcon_pacbio/augustus_output/extracted_proteins/EOG091G0QJA.faa.2 for reading
+INFO	[hmmsearch]	326 of 407 task(s) completed at 12/21/2019 09:07:58
+INFO	[hmmsearch]	367 of 407 task(s) completed at 12/21/2019 09:07:59
+INFO	[hmmsearch]	407 of 407 task(s) completed at 12/21/2019 09:08:00
+INFO	Results:
+INFO	C:83.7%[S:77.6%,D:6.1%],F:7.2%,M:9.1%,n:978
+INFO	819 Complete BUSCOs (C)
+INFO	759 Complete and single-copy BUSCOs (S)
+INFO	60 Complete and duplicated BUSCOs (D)
+INFO	70 Fragmented BUSCOs (F)
+INFO	89 Missing BUSCOs (M)
+INFO	978 Total BUSCO groups searched
+INFO	BUSCO analysis done with WARNING(s). Total running time: 327178.22108 seconds
+INFO	Results written in /g/arendt/kevin/Genome_Analysis/BUSCO/BUSCO_results/BUSCO_PacBio_Platy/FALCON_assembly/run_busco_platy_falcon_pacbio/
+
