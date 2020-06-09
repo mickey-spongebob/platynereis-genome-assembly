@@ -1,0 +1,4 @@
+# RNA-seq read mapping README
+
+A collection of paired-end Illumina based RNA-seq reads was mapped to the draft assembly to evaluate how
+well Platynereis dumerilii RNA is represented by the genome.
