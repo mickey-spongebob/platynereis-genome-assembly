@@ -1,0 +1,5 @@
+# FastQC README text file
+
+## Overview
+FastQC was performed on all the RNA-seq reads used for mapping to the genome, so as to test how well the genome assemblies
+represent RNA-seq reads.
